@@ -1,2 +1,1 @@
-# meccomp-ep1
-# meccomp-ep1
+# Exercício Programa 1 de Mecânica Computacional.
