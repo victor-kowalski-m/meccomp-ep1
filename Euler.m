@@ -1,4 +1,4 @@
-function [MY, MF, t] = Euler()
+function [MY, MF] = Euler()
 
 load('params.mat')
 

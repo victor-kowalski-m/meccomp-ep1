@@ -1,4 +1,4 @@
-function [MY, MF, t] = RK4
+function [MY, MF] = RK4
 
 load('params.mat')
 
