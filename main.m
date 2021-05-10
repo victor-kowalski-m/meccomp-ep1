@@ -1,9 +1,10 @@
-%% Globais
+%% Comandos iniciais
 
-% Comandos iniciais
 clc
 clear
 close
+
+%% Globais
 
 % Constantes
 mtotal = 1939;
