@@ -24,12 +24,18 @@ function resolver(metodo, h, t, tracao, proporcao_m)
     % Define numero de iteracoes
     iteracoes = length(t)-1;
 
-    % Matrizes iniciais
+    % Inicialização da matriz na qual cada coluna será o vetor Y calculado
+    % em um instante de tempo
     MY = zeros(length(Y0), length(t));
     MY(:, 1) = Y0;
+    
+    % Inicialização da matriz na qual cada coluna será a derivada
+    % do vetor Y calculada em um instante de tempo
     MF = zeros(length(Y0), iteracoes);
 
     % Resolve conforme o método escohido
+    
+    % Método de Euler
     if metodo == "euler"
         for i=1:iteracoes
 
@@ -52,6 +58,7 @@ function resolver(metodo, h, t, tracao, proporcao_m)
 
         end
 
+    % Método de Runge-Kutta de ordem 2
     elseif metodo == "rk2"
         for i=1:iteracoes
 
@@ -85,6 +92,7 @@ function resolver(metodo, h, t, tracao, proporcao_m)
 
         end
 
+    % Método de Runge-Kutta de ordem 4
     elseif metodo == "rk4"
         for i = 1:iteracoes
 
