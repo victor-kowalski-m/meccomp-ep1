@@ -4,11 +4,9 @@ clc
 clear
 close
 
-
 %% Condições iniciais
 
 Y0 = [0 0 10*pi/180 0];
-
 
 %% Parte 1
 

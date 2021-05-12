@@ -1,5 +1,5 @@
 function [MY, MF] = resolver(sis_eqs, t, Y0, metodo)
-    % Retorna a solução numérica para um conjunto de equações
+    % Retorna a solução numérica para um sistema de equações diferenciais
 
     % Define passo e numero de iteracoes
     h = t(2) - t(1);

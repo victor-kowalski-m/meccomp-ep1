@@ -1,6 +1,5 @@
 function plotar(metodo, t, MY, MF, proporcao_m, tracao)
-    % Monta plot com os argumentos inseridos e salva
-    % em uma pasta
+    % Monta plot com os argumentos inseridos e salva em uma pasta
 
     % Passo
     h = t(2) - t(1);
