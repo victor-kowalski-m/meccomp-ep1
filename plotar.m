@@ -1,4 +1,9 @@
-function plotar(metodo, t, h, MY, MF, proporcao_m, tracao)
+function plotar(metodo, t, MY, MF, proporcao_m, tracao)
+    % Monta plot com os argumentos inseridos e salva
+    % em uma pasta
+
+    % Passo
+    h = t(2) - t(1);
 
     % Titulo geral do gráfico e da imagem salva
     titulo = tracao + " m " + proporcao_m + " m1 " + (1 - proporcao_m )+ ...

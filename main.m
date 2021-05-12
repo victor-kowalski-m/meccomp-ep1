@@ -4,21 +4,11 @@ clc
 clear
 close
 
-%% Globais
 
-% Constantes
-mtotal = 1939;
-L = 2.95;
-I = 1;
-w = 10;
-mi = 0.42;
-beta = 0.02;
-g = 9.8;
+%% Condições iniciais
 
-% Condições iniciais
 Y0 = [0 0 10*pi/180 0];
 
-save('globais.mat')
 
 %% Parte 1
 
@@ -28,7 +18,9 @@ for h=[0.1, 0.01, 0.001]
     
     for metodo=["euler", "rk2", "rk4"]
         
-        resolver(metodo, h, t, "traseira", 0.6)
+        sis_eqs = montar_sistema(0.6, "traseira");
+        [MY, MF] = resolver(sis_eqs, t, Y0, metodo);
+        plotar(metodo, t, MY, MF, 0.6, "traseira")
     
     end
 end
@@ -38,8 +30,10 @@ end
 for tracao=["traseira", "dianteira", "quatro rodas"]
     
     for proporcao_m=[0.2, 0.8]
-
-        resolver("rk4", h, t, tracao, proporcao_m)
+       
+        sis_eqs = montar_sistema(proporcao_m, tracao);
+        [MY, MF] = resolver(sis_eqs, t, Y0, "rk4");
+        plotar(metodo, t, MY, MF, proporcao_m, tracao)
 
     end
 end
