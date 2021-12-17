@@ -4,4 +4,4 @@ Simulation of the stability of a steering vehicle, through the resolution of its
 
 Sample of the results:
 
-<img src="theta traseira m 0.6 m1 0.4 rk4 (h = 0.001).png" alt="drawing" width="300"/>
+<img src="plots/first task/theta traseira m 0.6 m1 0.4 rk4 (h = 0.001).png" alt="drawing" width="300"/>
