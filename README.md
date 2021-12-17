@@ -6,4 +6,4 @@ Sample of the results (angular position and velocity (theta) of a rear-wheel dri
 
 <img src="plots/first task/theta traseira m 0.6 m1 0.4 rk4 (h = 0.001).png" alt="drawing" width="500"/>
 
-Several other plots are shown in the folder *plots*.
+Several other plots are shown in the folder [plots](plots).
